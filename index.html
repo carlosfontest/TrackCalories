@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <title>Tracalories | Meal & Calorie Tracker</title>
+</head>
+<body>
+  <!-- NavBar -->
+  <nav>
+    <div class="nav-wrapper teal darken-2">
+      <div class="container">
+        <a href="#" class="brand-logo left">Tracalorie</a>
+        <ul class="right">
+          <li><a href="#" class="clear-btn btn teal">Limpiar Todo</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <br>
+
+  <div class="container">
+    <!-- Form para ingresar alimentos  -->
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title">Añadir Comida</span>
+        <form class="col">
+          <div class="row">
+
+            <div class="input-field col s6">
+              <input type="text" placeholder="Añadir Item" id="item-name">
+              <label for="item-name">Comida</label>
+            </div>
+
+            <div class="input-field col s6">
+              <input type="number" placeholder="Añadir Calorías" id="item-calories">
+              <label for="item-name">Calorías</label>
+            </div>
+
+            <button class="add-btn btn teal darken-4"><i class="fa fa-plus left"></i>Añadir</button>
+            <button class="update-btn btn orange darken-4"><i class="fa fa-pencil-square-o left"></i>Modificar</button>
+            <button class="delete-btn btn red darken-4"><i class="fa fa-remove left"></i>Eliminar</button>
+            <button class="back-btn btn grey darken-2 pull-right"><i class="fa fa-chevron-circle-left left"></i>Regresar</button>
+
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Contador de calorias -->
+    <h3 class="center-align">Calorías Totales: <span class="total-calories">0</span></h3>
+
+    <!-- Lista de alimentos -->
+    <ul id="item-list" class="collection">
+
+      <!-- <li class="collection-item" id="item-0">
+        <strong>Bistek Rebosado: </strong> <em>1200 Calorías</em>
+        <a href="#" class="secondary-content"><i class="edit-item fa fa-pencil"></i></a>
+      </li>
+
+      <li class="collection-item" id="item-0">
+        <strong>Galleta de Soda: </strong> <em>150 Calorías</em>
+        <a href="#" class="secondary-content"><i class="edit-item fa fa-pencil"></i></a>
+      </li>
+
+      <li class="collection-item" id="item-0">
+        <strong>Huevo Frito: </strong> <em>280 Calorías</em>
+        <a href="#" class="secondary-content"><i class="edit-item fa fa-pencil"></i></a>
+      </li> -->
+
+    </ul>
+  </div>
+  
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>
